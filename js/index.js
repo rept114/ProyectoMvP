@@ -34,3 +34,15 @@ function showRecomendacion(){
         $("#dvContainer").html(data);
     });
 }
+
+//Aquí se muestran las vistas
+function inicio(){
+  $.post("C:/xampp/htdocs/ProyectoMvP/modulos/Inicio/index.php", {})
+  .done(function(data)
+  {
+      $("#dvContainer").html("");
+      $("#dvContainer").html(data);
+  });
+}
+
+// Agrega el siguiente script en tu HTML, preferiblemente al final del cuerpo (justo antes de </body>)
