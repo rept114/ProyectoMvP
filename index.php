@@ -11,40 +11,62 @@
 <body>
     <div class="jm-loadingpage"></div>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#" onclick="inicio();">Inicio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Acerca de</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" onclick="showRecomendacion();">Servicios</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-        </li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #044261;">
+        <a class="navbar-brand" href="#" style="font-family: 'Poppins Medium', sans-serif; color: #E9F6F4;">
+            <img src="assets/img/logo5.0.png" alt="Logo" width="75" height="56">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick="inicio();" style="color: #E9F6F4;">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #E9F6F4;">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="showRecomendacion();" style="color: #E9F6F4;">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #E9F6F4;">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <!-- Carrusel -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 33.3333%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+        border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF0khL0Eec&#x2F;view?embed">
+        </iframe>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <div class="container mt-5" id="dvContainer">
         <!-- Contenido principal -->
         <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
-            <h1>Bienvenido a nuestro sitio web</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor hendrerit est, eu convallis justo pharetra id.</p>
+            <h1>¡Bienvenido a PC Build!</h1>
+            <p style="text-align: justify;">
+                En PC Build, simplificamos la elección de tu computadora ofreciéndote recomendaciones personalizadas. Responde algunas preguntas y obtén configuraciones adaptadas a tus necesidades y preferencias. Ya sea para trabajo, entretenimiento o gaming, estamos aquí para guiarte en la construcción de la computadora perfecta.
+
+                Descubre nuestras sugerencias, mantente al tanto de las últimas tendencias tecnológicas y comienza a crear la computadora ideal para ti. En PC Build, hacemos que la tecnología se adapte a tu estilo de vida. ¡Inicia ahora tu viaje informático con nosotros!
+            </p>
+
             <a href="#" class="btn btn-primary">Más información</a>
             </div>
-            <div class="col-md-6">
-            <img src="https://via.placeholder.com/400" alt="Imagen de muestra" class="img-fluid">
+            <div class="col-md-6 d-flex justify-content-center align-items-center" style="background-color: #044261; border-radius: 50%; width: 400px; height: 400px; overflow: hidden;">
+                <img src="assets/img/logo5.0.png" alt="Imagen de muestra" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
             </div>
+
         </div>
         </div>
         <!-- Sección de Productos -->
@@ -132,47 +154,47 @@
             </div>
         </section>
     </div>
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
+   <!-- Footer -->
+    <footer class="bg-color text-light py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <img src="ruta-del-logo.jpg" alt="Logo de la Empresa" class="img-fluid">
+                    <img src="assets/img/logo5.0.png" alt="Logo de la Empresa" width="200" height="162" class="img-fluid">
                 </div>
                 <div class="col-md-6">
-                    <h4>Descripción de la Empresa</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor hendrerit est, eu convallis justo pharetra id.</p>
+                    <h4 style="font-family: 'Poppins Medium', sans-serif;">Descripción de la Empresa</h4>
+                    <p style="font-family: 'Poppins Medium', sans-serif;">PC Build es una empresa especializada en recomendar configuraciones personalizadas de computadoras, ya sean de escritorio o laptops, a través de su sitio web interactivo. Guiados por una serie de preguntas específicas, ofrecen soluciones adaptadas a las necesidades y preferencias individuales de los usuarios, garantizando un rendimiento óptimo y una experiencia informática a medida.</p>
                 </div>
                 <div class="col-md-3">
-                    <h4>Síguenos</h4>
-                    <!-- Agrega enlaces a tus redes sociales -->
+                    <h4 style="font-family: 'Poppins Medium', sans-serif;">Síguenos</h4>
+                    <!-- Agrega enlaces a tus redes sociales con íconos -->
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">Facebook</a></li>
-                        <li><a href="#" class="text-light">Twitter</a></li>
-                        <li><a href="#" class="text-light">Instagram</a></li>
+                        <li><a href="#" class="text-light" style="text-decoration: none;"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#" class="text-light" style="text-decoration: none;"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="text-light" style="text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row mt-3">
                 <div class="col-md-12">
-                    <!-- Navbar en el Footer -->
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <!-- Navbar en el Footer con color de fondo personalizado -->
+                    <nav class="navbar navbar-expand-lg navbar-dark">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavFooter" aria-controls="navbarNavFooter" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavFooter">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Inicio</a>
+                                    <a class="nav-link" href="#" style="color: #E9F6F4;">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Acerca de</a>
+                                    <a class="nav-link" href="#" style="color: #E9F6F4;">Acerca de</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Servicios</a>
+                                    <a class="nav-link" href="#" style="color: #E9F6F4;">Servicios</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contacto</a>
+                                    <a class="nav-link" href="#" style="color: #E9F6F4;">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -181,6 +203,9 @@
             </div>
         </div>
     </footer>
+
+
+
 
     <script src="vendor/jquery-3.6.0/jquery-3.6.0.min.js"></script>
     <script src="js/index.js?v=1"></script>
